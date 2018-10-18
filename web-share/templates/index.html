@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hello, world!</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+  <ul>
+    {% if dirlist %}
+    <h3>Directory Listing: {{ currentpath }}</h3>
+      
+      {% for file in dirlist.keys() %}
+        {% if dirlist[file] %}
+        <a href="{{ currentpath + '/' + file }}">
+          <li>
+            <img src="{{ url_for('static', filename='folder.png') }}" width=16 height=16></img>
+          {{ file }}
+          </li>
+        </a>
+        {% endif %}
+      {% endfor %}
+
+
+      {% for file in dirlist.keys() %}
+        {% if not dirlist[file] %}
+          <a href="{{ currentpath + '/' + file }}">
+            <li>
+            <img src="{{ url_for('static', filename='file.png') }}" width=16 height=16></img>
+            {{ file }}
+            </li>
+          </a>
+        {% endif %}
+      {% endfor %}
+
+
+    {% else %}
+      <li>Empty Folder</li>
+    {% endif %}
+    
+    <form action="{{ currentpath }}" method="POST" enctype="multipart/form-data">
+    {% if message %}
+    <h3>{{ message }}</h3>
+    {% endif %}
+     <h4>Upload Your File Here:</h4>
+      <input type="file" name="myfile">
+      <input type="submit" name="submit" value="Upload">
+    </form>
+
+  </ul>
+  </body>
+</html>
