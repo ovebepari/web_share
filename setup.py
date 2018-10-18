@@ -4,7 +4,7 @@ with open('README.md', 'r') as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name = "web_share",
+    name = "web_share_ftp",
     version = '0.10',
     author = 'Ove Bepari',
     author_email = 'ovebepari@gmail.com',
@@ -27,7 +27,7 @@ setuptools.setup(
     ],
     entry_points={
         'console_scripts': [
-            'web_share = web_share.cli:main',
+            'web_share_ftp = web_share_ftp.cli:main',
         ],
     },
 )
