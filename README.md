@@ -23,4 +23,4 @@ And of course I could use `http.server` for serving the files but I somewhat wan
 
 Here's a web UI view of the flask app:
 
-![pyShare flask app](webshare/webshare-ftp.png)
+![*web-share screenshot*](web-share/webshare-ftp.png)
