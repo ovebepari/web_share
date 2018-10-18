@@ -1,10 +1,12 @@
-#!/usr/bin/python3
+    #!/usr/bin/python3
 
-"""pyShare - A Simple Flask App to Share Files Over the Network
+"""
+    web_share - A Simple Flask App to Share Files Over the Network
 
-This is a simple flask app that runs on port 0.0.0.0 and which serves a
-specific folder to share files from the host to the client browser or upload
-to host from a client browser. 
+    This is a simple flask app that runs on port 0.0.0.0 and which serves a
+    specific folder to share files from the host to the client browser or upload
+    to host from a client browser. 
+
 """
 from __future__ import print_function
 import os

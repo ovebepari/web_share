@@ -4,7 +4,7 @@ with open('README.md', 'r') as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name = "web-share",
+    name = "web_share",
     version = '0.10',
     author = 'Ove Bepari',
     author_email = 'ovebepari@gmail.com',
@@ -17,6 +17,9 @@ setuptools.setup(
     python_requires='>=3',
     classifiers = [
         "Programming Language :: Python :: 3",
+        'Environment :: Web Environment',
+        'Intended Audience :: Developers',
+        'Topic :: Internet :: WWW/HTTP :: WSGI :: Application',
     ],
     install_requires=[
         'flask',
@@ -24,7 +27,7 @@ setuptools.setup(
     ],
     entry_points={
         'console_scripts': [
-            'web-share=web-share.cli:main',
+            'web_share = web_share.cli:main',
         ],
     },
 )

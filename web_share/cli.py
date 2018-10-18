@@ -2,7 +2,9 @@ import click
 import os
 import subprocess as sp
 
-import share
+from web_share import share
+
+app_location = share.__file__
 
 @click.command()
 @click.argument('arg')
@@ -11,8 +13,10 @@ def main(arg):
 	   Author: Ove Bepari
 
 	"""
+	if not arg:
+		print("You did't provide any argument. Run with --help argument")
 	if arg == 'serve':
-		os.environ['FLASK_APP'] = 'share.py'
+		os.environ['FLASK_APP'] = app_location
 		sp.call(['flask run --host=0.0.0.0'], shell=True)
 
 	else:
