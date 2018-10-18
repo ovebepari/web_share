@@ -1,1 +1,1 @@
-name = "webshare-ftp"
+name = "web-share"

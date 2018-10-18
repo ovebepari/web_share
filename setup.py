@@ -24,7 +24,7 @@ setuptools.setup(
     ],
     entry_points={
         'console_scripts': [
-            'web-share=cli:main',
+            'web-share=web-share.cli:main',
         ],
     },
 )
