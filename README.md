@@ -23,4 +23,4 @@ And of course I could use `http.server` for serving the files but I somewhat wan
 
 Here's a web UI view of the flask app:
 
-![*web-share screenshot, check github if png not appears*](web-share/webshare-ftp.png)
+![*web-share screenshot, check github if png not appears*](web_share_ftp/webshare-ftp.png)
