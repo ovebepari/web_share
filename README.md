@@ -1,4 +1,4 @@
-### webshare - A Simple Flask App to Share Files Over the Network
+### web-share - A Simple Flask App to Share Files Over the Network
 
 This is a simple flask app / cli tool that serves your current folder to share files from the host to the client browser or upload to host from a client browser.
 

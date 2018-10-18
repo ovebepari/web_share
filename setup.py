@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name = "web-share",
-    version = '0.9',
+    version = '0.10',
     author = 'Ove Bepari',
     author_email = 'ovebepari@gmail.com',
     description = "A Flask App to Share Files Within the Same Network",
