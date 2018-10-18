@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name = "web_share_ftp",
-    version = '0.10',
+    version = '1.00',
     author = 'Ove Bepari',
     author_email = 'ovebepari@gmail.com',
     description = "A Flask App to Share Files Within the Same Network",
